@@ -1,4 +1,4 @@
-// const socket=io('http://localhost:3000')
+const socket=io('https://stolen-chat-app.herokuapp.com')
 const messageForm=document.getElementById('send')
 const messageInput=document.getElementById('message-input')
 const messageCon=document.getElementById('message-container')
@@ -24,6 +24,7 @@ socket.on('chat-message', data => {
 })
 
 messageForm.addEventListener('submit', e => {
+    console.log('day la gui')
     e.preventDefault()
     const message = messageInput.value
     appendMessage(`You: ${message}`)
