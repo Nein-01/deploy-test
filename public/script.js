@@ -19,12 +19,11 @@ socket.on('user-disconnected', name => {
   appendMessage(`${name} disconnected`)
 })
  
-socket.on('chat-message', data => {
+/*socket.on('chat-message', data => {
     appendMessage(data)
-})
+})*/
 
 messageForm.addEventListener('submit', e => {
-    console.log('day la gui')
     e.preventDefault()
     const message = messageInput.value
     appendMessage(`You: ${message}`)
@@ -37,5 +36,4 @@ function appendMessage(message){
     const messageElement=document.createElement('div')
     messageElement.innerText=message
     messageCon.append(messageElement)
-
 }
