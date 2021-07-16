@@ -1,4 +1,4 @@
-const socket=io('https://stolen-chat-app.herokuapp.com')
+// const socket=io('http://localhost:3000')
 const messageForm=document.getElementById('send')
 const messageInput=document.getElementById('message-input')
 const messageCon=document.getElementById('message-container')
